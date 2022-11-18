@@ -15,6 +15,15 @@
     <PackageTags>Versioning; Example; Nuget;</PackageTags>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove="nuget-img\nuget-img.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".gitattributes" />
+  </ItemGroup>
+
   <ItemGroup Label="Package References">
     <PackageReference Include="MinVer" Version="4.2.0">
       <PrivateAssets>all</PrivateAssets>
@@ -23,10 +32,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="nuget-img\nuget-img.png">
+    <Resource Include="nuget-img\nuget-img.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
-    </None>
+    </Resource>
   </ItemGroup>
 
 </Project>
