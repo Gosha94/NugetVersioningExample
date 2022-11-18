@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://nuget.versioning.example.com</PackageProjectUrl>
+    <Copyright>JSC NugetVersioning</Copyright>
+    <Company>JSC NugetVersioning</Company>
+    <Product>NugetVersioning</Product>
+    <Authors>NugetVersioningDevs</Authors>
+    <Description>This is example nuget package with versions control by MinVer lib</Description>
+    <PackageIcon>nuget-img.png</PackageIcon>
+    <RepositoryUrl>local git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Versioning; Example; Nuget;</PackageTags>
   </PropertyGroup>
 
   <ItemGroup Label="Package References">
@@ -9,6 +20,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="nuget-img\nuget-img.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
