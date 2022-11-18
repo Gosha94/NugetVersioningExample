@@ -4,5 +4,6 @@ namespace NugetVersioningExample
 {
     public class Liba
     {
+
     }
 }
